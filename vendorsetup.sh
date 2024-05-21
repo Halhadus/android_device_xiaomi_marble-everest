@@ -18,7 +18,7 @@ echo 'Cloning Hardware Display Tree'
 	git clone https://github.com/xiaomi-sm8450-marble/android_hardware_qcom_display -b ursa hardware/qcom-caf/sm8450/display
 
 echo 'Cloning Hardware Xiaomi Tree'
-	git clone https://github.com/xiaomi-sm8450-marble/android_hardware_xiaomi -b ursa hardware/xiaomi
+	git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-21 hardware/xiaomi
 
 echo 'Cloning Kernel Tree'
 	git clone --depth=1 https://github.com/xiaomi-sm8450-marble/android_kernel_xiaomi_sm8450 -b ursa kernel/xiaomi/sm8450

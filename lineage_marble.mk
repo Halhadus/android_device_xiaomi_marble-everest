@@ -7,14 +7,14 @@
 # Inherit from marble device
 $(call inherit-product, device/xiaomi/marble/device.mk)
 
-# Inherit from common Everest configuration
-$(call inherit-product, vendor/everest/config/common_full_phone.mk)
+# Inherit from common RisingOS configuration
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier
 PRODUCT_BRAND := POCO
 PRODUCT_DEVICE := marble
 PRODUCT_MODEL := 23049PCD8G
-PRODUCT_NAME := everest_marble
+PRODUCT_NAME := lineage_marble
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_SYSTEM_NAME := marble_global
@@ -29,12 +29,14 @@ BUILD_FINGERPRINT := POCO/marble_global/marble:14/UKQ1.230804.001/V816.0.8.0.UMR
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# Everest stuff
-WITH_GAPPS := true
-TARGET_SUPPORTS_BLUR := true
-TARGET_BOOT_ANIMATION_RES := 1440
-TARGET_INCLUDE_PIXEL_LAUNCHER := false
+# RisingOS stuff
+RISING_MAINTAINER=SharmagRit
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+TARGET_ENABLE_BLUR := true
+#TARGET_CORE_GMS := true
+WITH_GMS := true
 
-# Maintainer stuff
-EVEREST_BUILD_TYPE := Official
-EVEREST_MAINTAINER := SharmagRit
+# RisingOS Maintainer stuff
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RISING_CHIPSET="Snapdragon® 7+ Gen 2" \
+    RISING_MAINTAINER="SharmagRit"
