@@ -435,4 +435,7 @@
     <!-- Whether device implements proximity sensor based checks to prevent
          accidental unlocks when the screen is off. -->
     <bool name="config_proximityCheckOnFpsUnlock">true</bool>
+
+    <!-- Whether device has turbo power charging support -->
+    <bool name="config_hasTurboPowerCharger">true</bool>
 </resources>
