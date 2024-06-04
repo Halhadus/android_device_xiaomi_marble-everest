@@ -30,3 +30,6 @@ echo 'Cloning Vendor Tree'
 
 echo 'Cloning Vendor Common Tree'
 	git clone https://github.com/xiaomi-sm8450-marble/android_vendor_xiaomi_sm8450-common -b ursa vendor/xiaomi/sm8450-common
+
+echo 'Cloning Vendor Everest Signing Keys'
+        git clone https://github.com/xiaomi-sm8450-marble/android_vendor_everest_signing_keys -b ursa vendor/everest/signing/keys
