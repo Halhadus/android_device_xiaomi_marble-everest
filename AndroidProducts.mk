@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/everest_marble.mk
+    $(LOCAL_DIR)/pixelstar_marble.mk
 
 COMMON_LUNCH_CHOICES := \
-    everest_marble-user \
-    everest_marble-userdebug \
-    everest_marble-eng
+    pixelstar_marble-user \
+    pixelstar_marble-userdebug \
+    pixelstar_marble-eng
