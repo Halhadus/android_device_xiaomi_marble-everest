@@ -23,7 +23,7 @@ echo 'Cloning Hardware Xiaomi Tree'
 	git clone https://github.com/xiaomi-sm8450-marble/android_hardware_xiaomi -b ursa hardware/xiaomi
 
 echo 'Cloning Kernel Tree'
-	git clone --depth=1 https://github.com/Halhadus/android_kernel_xiaomi_sm8450 -b lineage-21 kernel/xiaomi/sm8450
+	git clone --depth=1 https://github.com/Halhadus/android_kernel_xiaomi_sm8450 -b lindroid-21 kernel/xiaomi/sm8450
 	git clone --depth=1 https://github.com/cupid-development/android_kernel_xiaomi_sm8450-modules -b lineage-21 kernel/xiaomi/sm8450-modules
 	git clone --depth=1 https://github.com/cupid-development/android_kernel_xiaomi_sm8450-devicetrees -b lineage-21 kernel/xiaomi/sm8450-devicetrees
 
