@@ -41,3 +41,8 @@ echo 'Fix kernel/configs'
 	curl https://raw.githubusercontent.com/Halhadus/android_kernel_configs/patch-marble/s/android-5.10/android-base.config -o kernel/configs/s/android-5.10/android-base.config
         rm kernel/configs/s/android-5.10/android-recommended.config
 	curl https://raw.githubusercontent.com/Halhadus/android_kernel_configs/patch-marble/s/android-5.10/android-base.config -o kernel/configs/s/android-5.10/android-recommended.config
+
+echo 'Cloninig Lindroid stuffs'
+        git clone https://github.com/Linux-on-droid/vendor_lindroid.git -b lindroid-21 vendor/lindroid
+	git clone https://github.com/Linux-on-droid/libhybris.git -b staging/lindroid-21 libhybris
+        git clone https://github.com/Linux-on-droid/external_lxc.git -b lindroid-21 external/lxc
