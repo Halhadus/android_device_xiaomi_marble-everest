@@ -22,6 +22,9 @@ $(call inherit-product-if-exists, device/xiaomi/miuicamera-marble/device.mk)
 # Basic Call Recorder
 $(call inherit-product, vendor/bcr/bcr.mk)
 
+# Lindroid
+$(call inherit-product, vendor/lindroid/lindroid.mk)
+
 # Init scripts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.marble.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.marble.rc \
